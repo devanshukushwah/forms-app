@@ -46,39 +46,6 @@ You can access the Swagger-based API documentation after starting the applicatio
 *   **Base URL**: http://localhost:9080/
     
 *   **Swagger UI**: http://localhost:9080/swagger-ui.html
-    
-
-Authentication
---------------
-
-The application uses JWT-based authentication. You will need to login first to get the JWT token.
-
-### Login Example:
-
-**POST /login**
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   jsonCopy code{    "username": "yourusername",    "password": "yourpassword"  }   `
-
-The response will include a JWT token, which you can use for subsequent API calls.
-
-### Example Request to Create a Form:
-
-**POST /forms**
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   jsonCopy code{    "title": "Sample Form",    "description": "A sample form to collect data"  }   `
-
-### Example Request to Submit a Form:
-
-**POST /forms/{formId}/submit**
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   jsonCopy code{    "email": "user@example.com",    "answers": [      {        "fieldId": 1,        "value": "Sample answer"      }    ]  }   `
-
-Testing
--------
-
-To run the tests for the project, use the following command:
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   bashCopy codemvn test   `
 
 Contributing
 ------------
